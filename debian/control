@@ -6,7 +6,12 @@ Uploaders: Julien Danjou <acid@debian.org>,
            Thomas Goirand <zigo@debian.org>,
            Mehdi Abaakouk <sileht@sileht.net>,
            Gonéri Le Bouder <goneri@debian.org>
-Build-Depends: debhelper (>= 9), python-setuptools, python-all (>= 2.6.6-3~), python3-setuptools, python3-all
+Build-Depends: debhelper (>= 9),
+               python-all (>= 2.6.6-3~),
+               python-setuptools,
+               python3-all,
+               python3-setuptools
+Build-Conflicts: python-xstatic, python3-xstatic
 Standards-Version: 3.9.5
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-xstatic-jasmine.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-xstatic-jasmine.git
@@ -15,7 +20,7 @@ Homepage: https://github.com/stackforge/xstatic-jasmine
 Package: python-xstatic-jasmine
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
-Depends: ${python:Depends}, ${misc:Depends}
+Depends: python-xstatic, ${misc:Depends}, ${python:Depends}
 Description: Jasmine JS XStatic support - Python 2.x
  XStatic is a packaging standard to package external (often 3rd party) static
  files as a Python package, so they are easily usable on all operating systems,
@@ -43,7 +48,7 @@ Description: Jasmine JS XStatic support - Python 2.x
 Package: python3-xstatic-jasmine
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
-Depends: ${python3:Depends}, ${misc:Depends}
+Depends: python3-xstatic, ${misc:Depends}, ${python3:Depends}
 Description: Jasmine JS XStatic support - Python 3.x
  XStatic is a packaging standard to package external (often 3rd party) static
  files as a Python package, so they are easily usable on all operating systems,
