@@ -2,12 +2,10 @@ Source: python-xstatic-jasmine
 Section: python
 Priority: optional
 Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
-Uploaders: Julien Danjou <acid@debian.org>,
-           Thomas Goirand <zigo@debian.org>,
-           Mehdi Abaakouk <sileht@sileht.net>,
-           Gonéri Le Bouder <goneri@debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>,
 Build-Depends: debhelper (>= 9),
-               python-all (>= 2.6.6-3~),
+               dh-python,
+               python-all,
                python-setuptools,
                python3-all,
                python3-setuptools
@@ -19,7 +17,6 @@ Homepage: https://github.com/stackforge/xstatic-jasmine
 
 Package: python-xstatic-jasmine
 Architecture: all
-Pre-Depends: dpkg (>= 1.15.6~)
 Depends: python-xstatic, ${misc:Depends}, ${python:Depends}
 Description: Jasmine JS XStatic support - Python 2.x
  XStatic is a packaging standard to package external (often 3rd party) static
@@ -47,7 +44,6 @@ Description: Jasmine JS XStatic support - Python 2.x
 
 Package: python3-xstatic-jasmine
 Architecture: all
-Pre-Depends: dpkg (>= 1.15.6~)
 Depends: python3-xstatic, ${misc:Depends}, ${python3:Depends}
 Description: Jasmine JS XStatic support - Python 3.x
  XStatic is a packaging standard to package external (often 3rd party) static
