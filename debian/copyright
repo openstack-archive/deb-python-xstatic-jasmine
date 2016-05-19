@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: XStatic-Jasmine
-Source: git://github.com/stackforge/xstatic-jasmine.git
+Source: https://github.com/openstack/xstatic-jasmine.git
 
 Files: debian/*
 Copyright: (c) 2014, Thomas Goirand <zigo@debian.org>
