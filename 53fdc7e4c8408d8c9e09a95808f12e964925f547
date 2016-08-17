@@ -1,0 +1,10 @@
+Code-Review+2: Thai Tran <tqtran@us.ibm.com>
+Code-Review+1: Matt Borland <matt.borland@hpe.com>
+Code-Review+2: Rob Cresswell <robert.cresswell@outlook.com>
+Workflow+1: Rob Cresswell <robert.cresswell@outlook.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 11 Jun 2015 14:29:45 +0000
+Reviewed-on: https://review.openstack.org/189485
+Project: openstack/deb-python-xstatic-jasmine
+Branch: refs/heads/master
