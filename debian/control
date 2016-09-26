@@ -12,8 +12,8 @@ Build-Depends: debhelper (>= 9),
 Build-Conflicts: python-xstatic,
                  python3-xstatic,
 Standards-Version: 3.9.6
-Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-xstatic-jasmine.git/
-Vcs-Git: https://anonscm.debian.org/git/openstack/python-xstatic-jasmine.git
+Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-xstatic-jasmine?h=debian%2Fnewton
+Vcs-Git: https://git.openstack.org/openstack/deb-python-xstatic-jasmine -b debian/newton
 Homepage: https://github.com/stackforge/xstatic-jasmine
 
 Package: python-xstatic-jasmine
